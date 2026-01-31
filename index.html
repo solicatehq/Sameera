@@ -1,62 +1,105 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UGC Creator | Beauty & Lifestyle</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              beige: {
-                50: '#fff5f7',
-                100: '#ffe4e9',
-                200: '#fecdd8',
-                300: '#fda4af',
-                900: '#9f1239',
-              },
-              charcoal: '#1A1A1A',
-              stone: {
-                50: '#fafaf9',
-                100: '#f5f5f4',
-                200: '#e7e5e4',
-                300: '#d6d3d1',
-                400: '#a8a29e',
-                500: '#78716c',
-                600: '#57534e',
-                700: '#44403c',
-                800: '#292524',
-                900: '#1c1917',
-              }
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UGC Creator | Beauty & Lifestyle</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            crushed_berry: {
+              50: '#f9bdc5',   // User 900
+              100: '#f37a8b',  // User 800
+              200: '#ed3850',  // User 700
+              300: '#ca132b',  // User 600
+              400: '#880d1e',  // User 500 (Default)
+              500: '#880d1e',  // User 500
+              600: '#6c0a17',  // User 400
+              700: '#510811',  // User 300
+              800: '#36050c',  // User 200
+              900: '#1b0306',  // User 100
             },
-            fontFamily: {
-              serif: ['"Cormorant Garamond"', 'serif'],
-              sans: ['"Inter"', 'sans-serif'],
+            raspberry: {
+              50: '#f8d5db',
+              100: '#f1abb7',
+              200: '#ea8192',
+              300: '#e4576e',
+              400: '#dd2d4a',
+              500: '#dd2d4a',
+              600: '#b61e37',
+              700: '#891629',
+              800: '#5b0f1c',
+              900: '#2e070e',
             },
-            animation: {
-              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-              'scroll': 'scroll 40s linear infinite',
+            bubblegum_pink: {
+              50: '#fce1e8',
+              100: '#fac3d1',
+              200: '#f7a5b9',
+              300: '#f587a2',
+              400: '#f26a8d',
+              500: '#f26a8d',
+              600: '#ec295a',
+              700: '#bf113c',
+              800: '#800b28',
+              900: '#400614',
             },
-            keyframes: {
-              fadeInUp: {
-                '0%': { opacity: '0', transform: 'translateY(20px)' },
-                '100%': { opacity: '1', transform: 'translateY(0)' },
-              },
-              scroll: {
-                '0%': { transform: 'translateX(0)' },
-                '100%': { transform: 'translateX(-50%)' },
-              }
+            pink_mist: {
+              50: '#fdebf1',
+              100: '#fbd7e3',
+              200: '#f8c2d5',
+              300: '#f6aec7',
+              400: '#f49cbb',
+              500: '#f49cbb',
+              600: '#ec5288',
+              700: '#d7185b',
+              800: '#8f103c',
+              900: '#48081e',
+            },
+            light_cyan: {
+              50: '#f4fcfc',
+              100: '#eaf8fa',
+              200: '#dff5f7',
+              300: '#d4f1f5',
+              400: '#cbeef3',
+              500: '#cbeef3',
+              600: '#81d6e2',
+              700: '#3abfd1',
+              800: '#228390',
+              900: '#114148',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Inter"', 'sans-serif'],
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            'scroll': 'scroll 40s linear infinite',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            scroll: {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(-50%)' },
             }
           }
         }
       }
-    </script>
+    }
+  </script>
   <script type="importmap">
 {
   "imports": {
@@ -67,10 +110,12 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-beige-50 text-stone-800 antialiased selection:bg-beige-200 selection:text-stone-900">
-    <div id="root"></div>
+
+<body class="bg-pink_mist-50 text-crushed_berry-800 antialiased selection:bg-pink_mist-200 selection:text-crushed_berry-900">
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
