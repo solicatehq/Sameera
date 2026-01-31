@@ -26,8 +26,6 @@ export const Hero: React.FC = () => {
           <h1 className="font-serif text-[12vw] md:text-[8rem] lg:text-[9.5rem] text-crushed_berry-900 leading-[0.85] tracking-tighter animate-fade-in-up opacity-0 flex flex-col md:block items-center" style={{ animationDelay: '0.3s' }}>
             <span className="block md:inline-block relative">
               Sameera
-              {/* Subtle decoration */}
-              <span className="absolute -top-6 -right-6 text-2xl md:text-4xl text-crushed_berry-400 font-light italic hidden md:block">est. 2024</span>
             </span>
             <span className="block md:inline-block italic font-light text-crushed_berry-600 ml-0 md:ml-8">
               Fatima
@@ -41,6 +39,7 @@ export const Hero: React.FC = () => {
             "Curating everyday moments into <br className="hidden md:block" /> timeless visual stories."
           </p>
           <div className="h-px w-24 bg-crushed_berry-300 mx-auto mb-6"></div>
+          <div className="text-[9px] font-sans uppercase tracking-[0.3em] text-light_cyan-400 mb-4">Est. 2024</div>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 text-[10px] font-sans uppercase tracking-[0.25em] text-crushed_berry-500">
             <span>Beauty</span>
             <span>•</span>
