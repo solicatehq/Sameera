@@ -85,6 +85,7 @@
           animation: {
             'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
             'scroll': 'scroll 40s linear infinite',
+            'scroll-vertical': 'scrollVertical 20s linear infinite',
           },
           keyframes: {
             fadeInUp: {
@@ -94,6 +95,10 @@
             scroll: {
               '0%': { transform: 'translateX(0)' },
               '100%': { transform: 'translateX(-50%)' },
+            },
+            scrollVertical: {
+              '0%': { transform: 'translateY(0)' },
+              '100%': { transform: 'translateY(-50%)' },
             }
           }
         }
@@ -113,7 +118,8 @@
   <link rel="stylesheet" href="/index.css">
 </head>
 
-<body class="bg-pink_mist-50 text-crushed_berry-800 antialiased selection:bg-pink_mist-200 selection:text-crushed_berry-900">
+<body
+  class="bg-pink_mist-50 text-crushed_berry-800 antialiased selection:bg-pink_mist-200 selection:text-crushed_berry-900">
   <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
