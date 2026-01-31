@@ -17,7 +17,7 @@ export const Contact: React.FC = () => {
   const getMailtoLink = () => {
     const subject = encodeURIComponent(`Collab Inquiry: ${formState.brand || 'New Brand'}`);
     const body = encodeURIComponent(`Hi Sameera,\n\nMy name is ${formState.name}.\n\n${formState.message}\n\nBest,\n${formState.name}`);
-    return `mailto:luxeclicks.ugc@gmail.com?subject=${subject}&body=${body}`;
+    return `mailto:Sameerafatima039@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -44,12 +44,12 @@ export const Contact: React.FC = () => {
 
             <div className="flex flex-col gap-6">
               <a
-                href="mailto:luxeclicks.ugc@gmail.com"
+                href="mailto:Sameerafatima039@gmail.com"
                 className="group flex items-center justify-between py-6 border-b border-white/10 hover:border-white/40 transition-all cursor-pointer"
               >
                 <div>
                   <span className="block text-[10px] uppercase tracking-widest text-white/40 mb-2">Email</span>
-                  <span className="font-serif text-3xl md:text-4xl text-white/80 group-hover:text-white transition-colors italic">luxeclicks.ugc</span>
+                  <span className="font-serif text-3xl md:text-4xl text-white/80 group-hover:text-white transition-colors italic">Sameerafatima039@gmail.com</span>
                 </div>
                 <ArrowUpRight className="text-white/30 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 w-8 h-8" strokeWidth={1} />
               </a>
