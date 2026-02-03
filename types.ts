@@ -17,6 +17,7 @@ export interface RatePackage {
   price: string;
   features: string[];
   isHighlight?: boolean;
+  note?: string;
 }
 
 export interface Testimonial {

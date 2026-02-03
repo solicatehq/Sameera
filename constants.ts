@@ -65,20 +65,21 @@ export const BRANDS: Brand[] = [
 
 export const RATES: RatePackage[] = [
   {
-    title: 'Instagram Reel',
-    price: 'Contact',
-    features: ['30-60 Seconds', 'Product Integration', 'Story Share', 'Organic Usage'],
+    title: 'Collaboration Reel',
+    price: '₹3,000',
+    features: ['1 Instagram Reel (30-60s)', 'Story Mention', 'Product Integration', 'Rights: Organic usage'],
   },
   {
-    title: 'YouTube Integration',
-    price: 'Contact',
-    features: ['Dedicated Segment', 'Link in Bio', 'Community Post', 'Organic Usage'],
+    title: 'Non-Collaboration Package',
+    price: '₹5,000',
+    features: ['One Reel (Non-Collab)', 'One Carousel', 'One Story'],
     isHighlight: true,
+    note: 'Deliverables within 5-7 days',
   },
   {
-    title: 'Story Set',
-    price: 'Contact',
-    features: ['3-5 Frames', 'Link Sticker', 'Interactive Polls', '24h Duration'],
+    title: 'Ad Usage Rights',
+    price: '₹1,000',
+    features: ['Per Month', 'Paid Ad Usage', 'Whitelisting Available'],
   },
 ];
 
