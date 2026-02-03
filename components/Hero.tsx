@@ -9,7 +9,7 @@ export const Hero: React.FC = () => {
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/luxeai4.jpeg"
+          src="/images/luxeai_white_roses.png"
           alt="Sameera Fatima"
           className="w-full h-full object-cover"
         />
