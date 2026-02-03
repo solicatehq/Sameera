@@ -21,7 +21,7 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <footer id="contact" className="bg-[#1a0508] text-pink_mist-100 relative overflow-hidden">
+    <footer id="contact" className="bg-[#1a0508] text-rose_white-100 relative overflow-hidden">
       {/* Decorative Texture */}
       <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: 'url("https://www.transparenttextures.com/patterns/stardust.png")' }}></div>
 
@@ -84,10 +84,10 @@ export const Contact: React.FC = () => {
                   name="name"
                   value={formState.name}
                   onChange={handleChange}
-                  className="block w-full bg-transparent border-b border-white/20 py-3 text-xl text-white placeholder-transparent focus:outline-none focus:border-light_cyan-400 transition-colors peer font-serif"
+                  className="block w-full bg-transparent border-b border-white/20 py-3 text-xl text-white placeholder-transparent focus:outline-none focus:border-antique_gold-400 transition-colors peer font-serif"
                   placeholder="Name"
                 />
-                <label htmlFor="name" className="absolute left-0 top-3 text-white/40 text-xs uppercase tracking-widest transition-all duration-300 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-light_cyan-400 peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-[10px] peer-not-placeholder-shown:text-white cursor-text pointer-events-none">
+                <label htmlFor="name" className="absolute left-0 top-3 text-white/40 text-xs uppercase tracking-widest transition-all duration-300 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-antique_gold-400 peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-[10px] peer-not-placeholder-shown:text-white cursor-text pointer-events-none">
                   Your Name
                 </label>
               </div>
@@ -99,10 +99,10 @@ export const Contact: React.FC = () => {
                   name="brand"
                   value={formState.brand}
                   onChange={handleChange}
-                  className="block w-full bg-transparent border-b border-white/20 py-3 text-xl text-white placeholder-transparent focus:outline-none focus:border-light_cyan-400 transition-colors peer font-serif"
+                  className="block w-full bg-transparent border-b border-white/20 py-3 text-xl text-white placeholder-transparent focus:outline-none focus:border-antique_gold-400 transition-colors peer font-serif"
                   placeholder="Brand"
                 />
-                <label htmlFor="brand" className="absolute left-0 top-3 text-white/40 text-xs uppercase tracking-widest transition-all duration-300 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-light_cyan-400 peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-[10px] peer-not-placeholder-shown:text-white cursor-text pointer-events-none">
+                <label htmlFor="brand" className="absolute left-0 top-3 text-white/40 text-xs uppercase tracking-widest transition-all duration-300 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-antique_gold-400 peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-[10px] peer-not-placeholder-shown:text-white cursor-text pointer-events-none">
                   Brand / Company
                 </label>
               </div>
@@ -114,17 +114,17 @@ export const Contact: React.FC = () => {
                   value={formState.message}
                   onChange={handleChange}
                   rows={1}
-                  className="block w-full bg-transparent border-b border-white/20 py-3 text-xl text-white placeholder-transparent focus:outline-none focus:border-light_cyan-400 transition-colors peer font-serif resize-none"
+                  className="block w-full bg-transparent border-b border-white/20 py-3 text-xl text-white placeholder-transparent focus:outline-none focus:border-antique_gold-400 transition-colors peer font-serif resize-none"
                   placeholder="Message"
                 ></textarea>
-                <label htmlFor="message" className="absolute left-0 top-3 text-white/40 text-xs uppercase tracking-widest transition-all duration-300 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-light_cyan-400 peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-[10px] peer-not-placeholder-shown:text-white cursor-text pointer-events-none">
+                <label htmlFor="message" className="absolute left-0 top-3 text-white/40 text-xs uppercase tracking-widest transition-all duration-300 peer-focus:-top-4 peer-focus:text-[10px] peer-focus:text-antique_gold-400 peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-[10px] peer-not-placeholder-shown:text-white cursor-text pointer-events-none">
                   Short Message
                 </label>
               </div>
 
               <div className="pt-4">
                 <a href={getMailtoLink()} className="block w-full group">
-                  <button type="button" className="w-full bg-white text-black hover:bg-light_cyan-200 transition-colors py-4 px-6 flex items-center justify-between">
+                  <button type="button" className="w-full bg-white text-black hover:bg-antique_gold-200 transition-colors py-4 px-6 flex items-center justify-between">
                     <span className="text-xs font-bold tracking-[0.2em] uppercase">Open Email Client</span>
                     <ArrowRight className="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-300" />
                   </button>
