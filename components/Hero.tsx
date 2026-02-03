@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from './Button';
+
 import { Instagram, Youtube } from 'lucide-react';
 
 export const Hero: React.FC = () => {
@@ -57,11 +57,7 @@ export const Hero: React.FC = () => {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 animate-fade-in-up opacity-0" style={{ animationDelay: '0.7s' }}>
-          <a href="https://starrd.in/glimpsesofmine_/media-kit" target="_blank" rel="noreferrer">
-            <Button variant="primary">
-              View Media Kit
-            </Button>
-          </a>
+
 
           <div className="flex items-center gap-6 px-6 py-3 bg-white/50 backdrop-blur-sm border border-white/40 rounded-full">
             <a
