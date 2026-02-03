@@ -66,6 +66,17 @@ export const Contact: React.FC = () => {
                 </div>
                 <ArrowUpRight className="text-white/30 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 w-8 h-8" strokeWidth={1} />
               </a>
+
+              <a
+                href="tel:+919700573894"
+                className="group flex items-center justify-between py-6 border-b border-white/10 hover:border-white/40 transition-all cursor-pointer"
+              >
+                <div>
+                  <span className="block text-[10px] uppercase tracking-widest text-white/40 mb-2">Phone</span>
+                  <span className="font-serif text-3xl md:text-4xl text-white/80 group-hover:text-white transition-colors italic">+91 97005 73894</span>
+                </div>
+                <ArrowUpRight className="text-white/30 group-hover:text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 w-8 h-8" strokeWidth={1} />
+              </a>
             </div>
           </div>
 
